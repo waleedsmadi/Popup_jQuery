@@ -4,6 +4,7 @@ $(window).ready(function(){
 
     // showing up the pic when click on it
     $(".container img").click(function(){
+        $(".overlay img").attr("src", $(this).attr("src"));
         $(".overlay").show();
     });
 
